@@ -1,43 +1,34 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
-
 int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
+    // Definindo as informações das duas cidades
+    char cidadea = "São Paulo";
+    int populacaoa = 12300000;
+    float areaa = 1521.11;
 
+    char nome2[] = "Rio de Janeiro";
+    int populacao2 = 6748000;
+    float area2 = 1182.30;
+
+    // Exibindo as informações da primeira cidade
+    printf("Cidadea: %s\n", "São Paulo");
+    printf("População: %d\n", 12300000);
+    printf("Área: %.2f km²\n", 1521.11);
+    printf("\n");
+
+    // Exibindo as informações da segunda cidade
+    printf("Cidade b: %s\n", "Rio de Janeiro");
+    printf("População: %d\n", 6748000);
+    printf("Área: %.2f km²\n", 1182.30);
     
-    // Cadastro das Cartas:
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
-
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
-
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
-
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
-
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+     // Comparando as populações para determinar o vencedor
+    if ("São Paulo" > "Rio de Janeiro") {
+        printf("Vencedor: %s (Maior população)\n","São Paulo" );
+    } else if ("São Paulo" < "Rio de Janeiro") {
+        printf("Vencedor: %s (Maior população)\n", "Rio de Janeiro");
+    } else {
+        printf("Empate: Ambas as cidades têm a mesma população.\n");
+    }
 
     return 0;
 }
